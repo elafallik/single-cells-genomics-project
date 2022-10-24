@@ -1,0 +1,3582 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams-chap-bytype
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "David"
+\font_sans "default" "default"
+\font_typewriter "default" "Miriam Fixed"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 3.5cm
+\rightmargin 3cm
+\bottommargin 3.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation 0bp
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Author
+אלה פאליק
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+208882134
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+: 
+\lang english
+Poisson loading
+\end_layout
+
+\begin_layout Standard
+מסתכלים על תהליך הכנסת תאים לטיפות.
+ נניח שיש לנו שני סוגי תאים - בני אדם ועכברים, במספר שווה.
+ מתכננים להעביר אותם ביחס 
+\begin_inset Formula $\lambda=\mathrm{rate\,of\,}\frac{\#cells}{\#droplets}$
+\end_inset
+
+.
+ אוספים 
+\begin_inset Formula $M$
+\end_inset
+
+ טיפות ומרצפים אותם.
+ קיבלנו 
+\begin_inset Formula 
+\begin{align*}
+N_{H} & =\#\mathrm{droplets\,with\,human\,cells\,only}\\
+N_{M} & =\#\mathrm{droplets\,with\,mouse\,cells\,only}\\
+N_{B} & =\#\mathrm{droplets\,with\,both\,human\,and\,mouse\,cells}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף א
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $M=10,000$
+\end_inset
+
+ ו 
+\begin_inset Formula $\lambda=0.1$
+\end_inset
+
+.
+ מה התוחלות של 
+\begin_inset Formula $N_{H},N_{M},N_{B}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+נתון שיש מס' שווה של תאי בני אדם ועכברים, לכן ההסתברות לתא אנושי = 
+\begin_inset Formula $\alpha=\frac{1}{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $C=\#\mathrm{cells\,in\,droplet}$
+\end_inset
+
+.
+ נזכור שראינו בהרצאה 
+\begin_inset Formula $C\sim Po\left(\lambda\right)$
+\end_inset
+
+.
+ אז לכל 
+\begin_inset Formula $k\ge0$
+\end_inset
+
+, 
+\begin_inset Formula $\mathbb{P}\left(C=k\right)=\frac{e^{-\lambda}}{k!}\lambda^{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $X_{H,i}$
+\end_inset
+
+ מציין של האם בטיפה ה 
+\begin_inset Formula $i$
+\end_inset
+
+ יש רק תאים אנושיים.
+ אז 
+\begin_inset Formula $N_{H}=\sum_{i=1}^{M}X_{H,i}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+נסתכל על טיפה כלשהי 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ הסתברות לתא אנושי = 
+\begin_inset Formula $\alpha=\frac{1}{2}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\mathbb{P}\left(X_{H,i}=1|C=k\right)=\left(\frac{1}{2}\right)^{k}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $k>0$
+\end_inset
+
+.
+ אם אין תאים בטיפות לא נחשיב את התא, 
+\begin_inset Formula $\mathbb{P}\left(X_{H,i}=1|C=0\right)=0$
+\end_inset
+
+.
+ לכן נקבל מנוסחת ההסתברות השלמה:
+\begin_inset Formula 
+\begin{align*}
+\mathbb{P}\left(X_{H,i}=1\right) & =\sum_{k=0}^{\infty}\mathbb{P}\left(X_{H,i}=1|C=k\right)\cdot\mathbb{P}\left(C=k\right)=\sum_{k=1}^{\infty}\left(\frac{1}{2}\right)^{k}\cdot\frac{e^{-\lambda}}{k!}\lambda^{k}=\\
+ & =\sum_{k=1}^{\infty}\left(\frac{\lambda}{2}\right)^{k}\cdot\frac{e^{-\lambda}}{k!}+\left(\frac{\lambda}{2}\right)^{0}\cdot\frac{e^{-\lambda}}{0!}-e^{-\lambda}=\sum_{k=0}^{\infty}\left(\frac{\lambda}{2}\right)^{k}\cdot\frac{e^{-\lambda}}{k!}-e^{-\lambda}=\\
+ & =e^{-\frac{\lambda}{2}}\sum_{k=0}^{\infty}\left(\frac{\lambda}{2}\right)^{k}\cdot\frac{e^{-\frac{\lambda}{2}}}{k!}-e^{-\lambda}=e^{-\frac{\lambda}{2}}\underbrace{\sum_{k=0}^{\infty}\mathbb{P}\left(Po\left(\frac{\lambda}{2}\right)=k\right)}_{=1}-e^{-\lambda}=e^{-\frac{\lambda}{2}}-e^{-\lambda}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סה
+\begin_inset Quotes erd
+\end_inset
+
+כ נקבל מלינאריות התוחלת:
+\begin_inset Formula 
+\[
+\mathbb{E}\left[N_{H}\right]=\mathbb{E}\left[\sum_{i=1}^{M}X_{H,i}\right]=\sum_{i=1}^{M}\mathbb{E}\left[X_{H,i}\right]=\sum_{i=1}^{M}\mathbb{P}\left(X_{H,i}=1\right)=M\cdot\left(e^{-\frac{\lambda}{2}}-e^{-\lambda}\right)
+\]
+
+\end_inset
+
+באופן דומה, מכיוון שההסתברות לתא עכבר = 
+\begin_inset Formula $1-\alpha=\frac{1}{2}$
+\end_inset
+
+, נקבל 
+\begin_inset Formula $\mathbb{E}\left[N_{M}\right]=M\cdot\left(e^{-\frac{\lambda}{2}}-e^{-\lambda}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $N=\#\mathrm{non\,empty\,droplets}$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $N_{H}+N_{M}+N_{B}=N$
+\end_inset
+
+ לכן 
+\begin_inset Formula 
+\[
+\mathbb{E}\left[N_{B}\right]=\mathbb{E}\left[N\right]-\mathbb{E}\left[N_{H}\right]-\mathbb{E}\left[N_{M}\right]
+\]
+
+\end_inset
+
+נשים לב 
+\begin_inset Formula $N=M-\#\mathrm{empty\,droplets}$
+\end_inset
+
+.
+ נחשב:
+\begin_inset Formula 
+\begin{align*}
+\mathbb{E}\left[\#\mathrm{empty\,droplets}\right] & =\sum_{i=1}^{M}\mathbb{E}\left[\mathrm{droplet\,i\,is\,empty}\right]=\sum_{i=1}^{M}\mathbb{P}\left(\mathrm{droplet\,i\,is\,empty}\right)=\\
+ & =\sum_{i=1}^{M}\mathbb{P}\left(C=0\right)=M\cdot e^{-\lambda}
+\end{align*}
+
+\end_inset
+
+לכן 
+\begin_inset Formula $\mathbb{E}\left[N\right]=M-\mathbb{E}\left[\#\mathrm{empty\,droplets}\right]=M-Me^{-\lambda}$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula 
+\[
+\mathbb{E}\left[N_{B}\right]=\mathbb{E}\left[N\right]-\mathbb{E}\left[N_{H}\right]-\mathbb{E}\left[N_{M}\right]=M-Me^{-\lambda}-2M\cdot\left(e^{-\frac{\lambda}{2}}-e^{-\lambda}\right)=M\left(1-2e^{-\frac{\lambda}{2}}+e^{-\lambda}\right)=M\left(1-e^{-\frac{\lambda}{2}}\right)^{2}
+\]
+
+\end_inset
+
+נציב את המספרים הנתונים 
+\begin_inset Formula $M=10,000$
+\end_inset
+
+ ו 
+\begin_inset Formula $\lambda=0.1$
+\end_inset
+
+ ונקבל:
+\begin_inset Formula 
+\[
+\boxed{\mathbb{E}\left[N_{H}\right]=\mathbb{E}\left[N_{M}\right]=463.92,\qquad\mathbb{E}\left[N_{B}\right]=23.78}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ב
+\end_layout
+
+\begin_layout Standard
+נניח כעת 
+\begin_inset Formula $M\sim Po\left(10,000\right)$
+\end_inset
+
+.
+ איך זה משנה את התוצאות?
+\end_layout
+
+\begin_layout Standard
+הבעיה היא שלא נוכל להשתמש בלינאריות התוחלת ישירות, אז נשתמש קודם בנוסחת
+ התוחלת השלמה: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbb{E}\left[N_{H}\right]=\sum_{m=0}^{\infty}\mathbb{E}\left[N_{H}|M=m\right]\cdot\mathbb{P}\left(M=m\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M\sim Po\left(10,000\right)$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $\delta=10,000$
+\end_inset
+
+.
+ אז אנחנו יודעים 
+\begin_inset Formula $\mathbb{P}\left(M=m\right)=\frac{e^{-\delta}}{m!}\delta^{m}$
+\end_inset
+
+.
+ עבור כל 
+\begin_inset Formula $m$
+\end_inset
+
+ מסעיף א, נקבל 
+\begin_inset Formula $\mathbb{E}\left[N_{H}|M=m\right]=m\cdot\left(e^{-\frac{\lambda}{2}}-e^{-\lambda}\right)$
+\end_inset
+
+.
+ לכן סה
+\begin_inset Quotes erd
+\end_inset
+
+כ 
+\begin_inset Formula 
+\begin{align*}
+\mathbb{E}\left[N_{H}\right] & =\sum_{m=0}^{\infty}\mathbb{E}\left[N_{H}|M=m\right]\cdot\mathbb{P}\left(M=m\right)=\sum_{m=0}^{\infty}m\cdot\left(e^{-\frac{\lambda}{2}}-e^{-\lambda}\right)\cdot\frac{e^{-\delta}}{m!}\delta^{m}=\left(e^{-\frac{\lambda}{2}}-e^{-\lambda}\right)\delta\sum_{m=1}^{\infty}\frac{e^{-\delta}}{\left(m-1\right)!}\delta^{m-1}=\\
+ & =\left(e^{-\frac{\lambda}{2}}-e^{-\lambda}\right)\delta\sum_{m=0}^{\infty}\frac{e^{-\delta}}{m!}\delta^{m}=\left(e^{-\frac{\lambda}{2}}-e^{-\lambda}\right)\delta\underbrace{\sum_{m=0}^{\infty}\mathbb{P}\left(Po\left(\delta\right)=m\right)}_{1}=\left(e^{-\frac{\lambda}{2}}-e^{-\lambda}\right)\delta
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+באותו אופן נקבל שוב 
+\begin_inset Formula $\mathbb{E}\left[N_{M}\right]=\mathbb{E}\left[N_{H}\right]=\left(e^{-\frac{\lambda}{2}}-e^{-\lambda}\right)\delta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כעת 
+\begin_inset Formula $N=M-\#\mathrm{empty\,droplets}$
+\end_inset
+
+.
+ שוב בעזרת נוסחת התוחלת השלמה:
+\begin_inset Formula 
+\begin{align*}
+\mathbb{E}\left[\#\mathrm{empty\,droplets}\right] & =\sum_{m=0}^{\infty}\mathbb{E}\left[\#\mathrm{empty\,droplets}|M=m\right]\cdot\mathbb{P}\left(M=m\right)
+\end{align*}
+
+\end_inset
+
+מסעיף א, 
+\begin_inset Formula $\mathbb{E}\left[\#\mathrm{empty\,droplets}|M=m\right]=me^{-\lambda}$
+\end_inset
+
+.
+ לכן סה
+\begin_inset Quotes erd
+\end_inset
+
+כ )חישוב דומה לזה שלמעלה(:
+\begin_inset Formula 
+\[
+\mathbb{E}\left[\#\mathrm{empty\,droplets}\right]=\sum_{m=0}^{\infty}\mathbb{E}\left[\#\mathrm{empty\,droplets}|M=m\right]\cdot\mathbb{P}\left(M=m\right)=\sum_{m=0}^{\infty}me^{-\lambda}\cdot\frac{e^{-\delta}}{m!}\delta^{m}=\delta e^{-\lambda}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן 
+\begin_inset Formula $\mathbb{E}\left[N\right]=\mathbb{E}\left[M\right]-\mathbb{E}\left[\#\mathrm{empty\,droplets}\right]=\delta-\delta e^{-\lambda}$
+\end_inset
+
+.
+ אלו אותן תוצאות כמו סעיף א, רק שהחלפנו את 
+\begin_inset Formula $M$
+\end_inset
+
+ ב 
+\begin_inset Formula $\delta$
+\end_inset
+
+ לכן נקבל 
+\begin_inset Formula $\mathbb{E}\left[N_{B}\right]=\delta\left(1-e^{-\frac{\lambda}{2}}\right)^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+עכשיו 
+\begin_inset Formula $\delta=10,000$
+\end_inset
+
+ וזה שווה ל 
+\begin_inset Formula $M$
+\end_inset
+
+ בסעיף א', וקיבלנו את אותן תוצאות בהחלפת 
+\begin_inset Formula $M$
+\end_inset
+
+ ב 
+\begin_inset Formula $\delta$
+\end_inset
+
+, לכן 
+\series bold
+אין שינוי
+\series default
+ בתוצאות.
+\end_layout
+
+\begin_layout Subsection*
+סעיף ג
+\end_layout
+
+\begin_layout Standard
+נניח כעת שאנחנו לא יודעים את 
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+ האם אפשר לשערך אותו מתצפיות? כתבו את הפונקצית 
+\begin_inset Formula $L$
+\end_inset
+
+ והוציאו גרף של 
+\begin_inset Formula $LL$
+\end_inset
+
+ מול ערכי 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ שונים.
+ 
+\end_layout
+
+\begin_layout Standard
+האם אפשר למצוא פתרון אנליטי? 
+\end_layout
+
+\begin_layout Standard
+אילו ערך 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ הכי סביר אם נתון 
+\begin_inset Formula $M=10,000,\quad N_{H}=629,\quad N_{M}=678,\quad N_{B}=45$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L\left(\lambda|N_{H},N_{M},N_{B}\right)=\mathbb{P}\left(N_{H},N_{M},N_{B}|\lambda\right)
+\]
+
+\end_inset
+
+הרכב התאים בטיפות שונות הוא ב
+\begin_inset Quotes erd
+\end_inset
+
+ת.
+ נסמן 
+\begin_inset Formula 
+\begin{align*}
+X_{H,i} & =1_{\left\{ \mathrm{droplet\,i\,with\,human\,cells\,only}\right\} }\\
+X_{M,i} & =1_{\left\{ \mathrm{droplet\,i\,with\,mouse\,cells\,only}\right\} }\\
+X_{H,i} & =1_{\left\{ \mathrm{droplet\,i\,with\,both\,human\,and\,mouse\,cells}\right\} }
+\end{align*}
+
+\end_inset
+
+בהינתן 
+\begin_inset Formula $\lambda$
+\end_inset
+
+, ראינו כי 
+\begin_inset Formula $\mathbb{P}\left(X_{H,i}=1\right)=\mathbb{P}\left(X_{M,i}=1\right)=e^{-\frac{\lambda}{2}}-e^{-\lambda}$
+\end_inset
+
+.
+ בנוסף ראינו 
+\begin_inset Formula $\mathbb{P}\left(\mathrm{empty\,cell}\right)=e^{-\lambda}$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula 
+\begin{align*}
+\mathbb{P}\left(X_{B,i}=1\right) & =1-\mathbb{P}\left(X_{H,i}=1\right)-\mathbb{P}\left(X_{M,i}=1\right)-\mathbb{P}\left(\mathrm{empty\,cell}\right)=\\
+ & =1-2e^{-\frac{\lambda}{2}}+2e^{-\lambda}-e^{-\lambda}=1-2e^{-\frac{\lambda}{2}}+e^{-\lambda}=\left(1-e^{-\frac{\lambda}{2}}\right)^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב כי ההסתברות לא תלוי בסדר הטיפות.
+ אז סה
+\begin_inset Quotes erd
+\end_inset
+
+כ נקבל:
+\begin_inset Formula 
+\begin{align*}
+L\left(\lambda|N_{H},N_{M},N_{B}\right) & =\mathbb{P}\left(N_{H},N_{M},N_{B}|\lambda\right)=\\
+ & =\mathbb{P}\left(X_{H,i}=1\right)^{N_{H}}\mathbb{P}\left(X_{M,i}=1\right)^{N_{M}}\mathbb{P}\left(X_{B,i}=1\right)^{N_{B}}\mathbb{P}\left(\mathrm{empty\,cell}\right)^{M-N_{H}-N_{M}-N_{B}}=\\
+ & =\left(e^{-\frac{\lambda}{2}}-e^{-\lambda}\right)^{N_{H}}\left(e^{-\frac{\lambda}{2}}-e^{-\lambda}\right)^{N_{M}}\left(\left(1-e^{-\frac{\lambda}{2}}\right)^{2}\right)^{N_{B}}\left(e^{-\lambda}\right)^{M-N_{H}-N_{M}-N_{B}}=\\
+ & =\left(e^{-\frac{\lambda}{2}}-e^{-\lambda}\right)^{N_{H}+N_{M}}\left(1-e^{-\frac{\lambda}{2}}\right)^{2N_{B}}\left(e^{-\lambda}\right)^{M-N_{H}-N_{M}-N_{B}}=\\
+ & =\left(e^{\lambda}\left(e^{-\frac{\lambda}{2}}-e^{-\lambda}\right)\right)^{N_{H}+N_{M}}\left(e^{\frac{\lambda}{2}}\left(1-e^{-\frac{\lambda}{2}}\right)\right)^{2N_{B}}\left(e^{-\lambda}\right)^{M}=\\
+ & =\left(e^{\frac{\lambda}{2}}-1\right)^{N_{H}+N_{M}}\left(e^{\frac{\lambda}{2}}-1\right)^{2N_{B}}\left(e^{-\lambda}\right)^{M}=\boxed{\left(e^{\frac{\lambda}{2}}-1\right)^{N_{H}+N_{M}+2N_{B}}\left(e^{-\lambda}\right)^{M}}
+\end{align*}
+
+\end_inset
+
+נעשה לוג:
+\begin_inset Formula 
+\begin{align*}
+LL\left(\lambda|N_{H},N_{M},N_{B}\right) & =\log\left(\left(e^{\frac{\lambda}{2}}-1\right)^{N_{H}+N_{M}+2N_{B}}\left(e^{-\lambda}\right)^{M}\right)=\boxed{\left(N_{H}+N_{M}+2N_{B}\right)\log\left(e^{\frac{\lambda}{2}}-1\right)-\lambda M}
+\end{align*}
+
+\end_inset
+
+נתון לנו 
+\begin_inset Formula $M=10,000,\quad N_{H}=629,\quad N_{M}=678,\quad N_{B}=45$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+נוציא פלוט של ערכי 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ מול 
+\begin_inset Formula $LL\left(\lambda|N_{H},N_{M},N_{B}\right)$
+\end_inset
+
+: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename lambda.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+פלוט של 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ מול 
+\begin_inset Formula $LL\left(\lambda\right)$
+\end_inset
+
+ שחישבנו עבור 
+\begin_inset Formula $M=10,000,\quad N_{H}=629,\quad N_{M}=678,\quad N_{B}=45$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+כאן נקבל מקסימום ב 
+\begin_inset Formula $\lambda=0.1448$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נחשב פתרון אנליטי: נגזור את 
+\begin_inset Formula $LL\left(\lambda|N_{H},N_{M},N_{B}\right)$
+\end_inset
+
+ ונשווה לאפס:
+\begin_inset Formula 
+\begin{align*}
+LL\left(\lambda|N_{H},N_{M},N_{B}\right)' & =\left(N_{H}+N_{M}+2N_{B}\right)\frac{1}{e^{\frac{\lambda}{2}}-1}\cdot e^{\frac{\lambda}{2}}\cdot\frac{1}{2}-M=0\\
+\iff & 1+\frac{1}{e^{\frac{\lambda}{2}}-1}=\frac{e^{\frac{\lambda}{2}}}{e^{\frac{\lambda}{2}}-1}=\frac{2M}{N_{H}+N_{M}+2N_{B}}\\
+\iff & \frac{1}{e^{\frac{\lambda}{2}}-1}=\frac{2M}{N_{H}+N_{M}+2N_{B}}-1=\frac{2M-N_{H}-N_{M}-2N_{B}}{N_{H}+N_{M}+2N_{B}}\\
+\iff & e^{\frac{\lambda}{2}}=\frac{N_{H}+N_{M}+2N_{B}}{2M-N_{H}-N_{M}-2N_{B}}+1\\
+\iff & \boxed{\lambda=2\log\left(\frac{N_{H}+N_{M}+2N_{B}}{2M-N_{H}-N_{M}-2N_{B}}+1\right)}
+\end{align*}
+
+\end_inset
+
+נציב את הנתונים ונקבל 
+\begin_inset Formula $\boxed{\lambda=0.1448}$
+\end_inset
+
+ בדיוק כמו שרצינו.
+\end_layout
+
+\begin_layout Subsection*
+סעיף ד
+\end_layout
+
+\begin_layout Standard
+נניח כעת 
+\begin_inset Formula $M\sim Po\left(10,000\right)$
+\end_inset
+
+.
+ איך זה משנה את התוצאות?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L\left(\lambda|N_{H},N_{M},N_{B}\right)=\mathbb{P}\left(N_{H},N_{M},N_{B}|\lambda\right)
+\]
+
+\end_inset
+
+ההסתברויות עבור תאים יחידים הן זהות.
+ ההבדל היחיד הוא כמות התאים הריקים, שהיא 
+\begin_inset Formula $M-N_{H}-N_{M}-N_{B}$
+\end_inset
+
+ ועכשיו זה מ
+\begin_inset Quotes erd
+\end_inset
+
+מ.
+ נעשה כמו בסעיף ב' עם נוסחת ההסתברות השלמה על כל האפשרויות של 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ אז
+\begin_inset Formula 
+\[
+L\left(\lambda|N_{H},N_{M},N_{B}\right)=\mathbb{P}\left(N_{H},N_{M},N_{B}|\lambda\right)=\sum_{m=0}^{\infty}\mathbb{P}\left(N_{H},N_{M},N_{B}|\lambda,M=m\right)
+\]
+
+\end_inset
+
+מסעיף ג' לכל 
+\begin_inset Formula $m$
+\end_inset
+
+, 
+\begin_inset Formula $\mathbb{P}\left(N_{H},N_{M},N_{B}|\lambda,M=m\right)=\left(e^{\frac{\lambda}{2}}-1\right)^{N_{H}+N_{M}+2N_{B}}\left(e^{-\lambda}\right)^{m}$
+\end_inset
+
+ ו 
+\begin_inset Formula $M\sim Po\left(10,000\right)$
+\end_inset
+
+ לכן 
+\begin_inset Formula $\mathbb{P}\left(M=m\right)=\frac{e^{-\delta}}{m!}\delta^{m}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\delta=10000$
+\end_inset
+
+.
+ לכן סה
+\begin_inset Quotes erd
+\end_inset
+
+כ:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+L\left(\lambda|N_{H},N_{M},N_{B}\right) & =\mathbb{P}\left(N_{H},N_{M},N_{B}|\lambda\right)=\sum_{m=0}^{\infty}\mathbb{P}\left(N_{H},N_{M},N_{B}|\lambda,M=m\right)\cdot\mathbb{P}\left(M=m\right)=\\
+ & =\sum_{m=0}^{\infty}\left(e^{\frac{\lambda}{2}}-1\right)^{N_{H}+N_{M}+2N_{B}}\left(e^{-\lambda}\right)^{m}\frac{e^{-\delta}}{m!}\delta^{m}=\\
+ & =\left(e^{\frac{\lambda}{2}}-1\right)^{N_{H}+N_{M}+2N_{B}}e^{-\delta+2\delta e^{-\lambda}}\overbrace{\sum_{m=0}^{\infty}\frac{e^{-\delta e^{-\lambda}}}{m!}\left(\delta e^{-\lambda}\right)^{m}}^{=1}=\\
+ & =\left(e^{\frac{\lambda}{2}}-1\right)^{N_{H}+N_{M}+2N_{B}}e^{-\delta}e^{2\delta e^{-\lambda}}
+\end{align*}
+
+\end_inset
+
+נעשה לוג:
+\begin_inset Formula 
+\begin{align*}
+LL\left(\lambda|N_{H},N_{M},N_{B}\right) & =\log\left(\left(e^{\frac{\lambda}{2}}-1\right)^{N_{H}+N_{M}+2N_{B}}e^{-\delta}e^{2\delta e^{-\lambda}}\right)=\boxed{\left(N_{H}+N_{M}+2N_{B}\right)\log\left(e^{\frac{\lambda}{2}}-1\right)-\delta+2\delta e^{-\lambda}}
+\end{align*}
+
+\end_inset
+
+נתון לנו 
+\begin_inset Formula $M=10,000,\quad N_{H}=629,\quad N_{M}=678,\quad N_{B}=45$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+נוציא פלוט של ערכי 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ מול 
+\begin_inset Formula $LL\left(\lambda|N_{H},N_{M},N_{B}\right)$
+\end_inset
+
+: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename lambda2.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+פלוט של 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ מול 
+\begin_inset Formula $LL\left(\lambda\right)$
+\end_inset
+
+ שחישבנו עבור 
+\begin_inset Formula $M\sim Po\left(10000\right),\quad N_{H}=629,\quad N_{M}=678,\quad N_{B}=45$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+כאן נקבל מקסימום ב 
+\begin_inset Formula $\lambda=0.0769$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ננסה לחשב פתרון אנליטי: נגזור את 
+\begin_inset Formula $LL\left(\lambda|N_{H},N_{M},N_{B}\right)$
+\end_inset
+
+ ונשווה לאפס:
+\begin_inset Formula 
+\begin{align*}
+LL\left(\lambda|N_{H},N_{M},N_{B}\right)' & =\left(N_{H}+N_{M}+2N_{B}\right)\frac{1}{e^{\frac{\lambda}{2}}-1}\cdot e^{\frac{\lambda}{2}}\cdot\frac{1}{2}-2\delta e^{-\lambda}=0\\
+\iff & \frac{e^{\frac{\lambda}{2}}}{e^{\frac{\lambda}{2}}-1}=\frac{4\delta e^{-\lambda}}{N_{H}+N_{M}+2N_{B}}\\
+\iff & \frac{e^{\frac{3\lambda}{2}}}{e^{\frac{\lambda}{2}}-1}=\frac{4\delta}{N_{H}+N_{M}+2N_{B}}
+\end{align*}
+
+\end_inset
+
+ולזה אין פתרון אנליטי )ממה שאני יודעת(.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+: 
+\lang english
+Stochastic models of expression
+\end_layout
+
+\begin_layout Standard
+מתואר המודל של שני מצבים עבור כמות רנ
+\begin_inset Quotes erd
+\end_inset
+
+א בתא.
+\end_layout
+
+\begin_layout Standard
+נסתכל על שלוש אפשרויות:
+\end_layout
+
+\begin_layout Enumerate
+מעברים מהירים: 
+\begin_inset Formula $\lambda=1,\delta=0.2,\kappa_{on}=1,\kappa_{off}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+מעברים בינוניים: 
+\begin_inset Formula $\lambda=1,\delta=0.2,\kappa_{on}=0.1,\kappa_{off}=0.1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+מעברים איטיים: 
+\begin_inset Formula $\lambda=1,\delta=0.2,\kappa_{on}=0.01,\kappa_{off}=0.01$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ונשתמש באלגוריתם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Gillespie
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כדי לסמלץ ריצה במודל.
+\end_layout
+
+\begin_layout Standard
+יש לנו שתי אפשרויות לאסוף מדגם של מצבים:
+\end_layout
+
+\begin_layout Standard
+- 
+\lang english
+CollectSample
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- לקחת מצב אחרון מכל ריצה עבור 
+\begin_inset Formula $n$
+\end_inset
+
+ ריצות.
+\end_layout
+
+\begin_layout Standard
+- 
+\lang english
+CollectSamplesMultiRun
+\lang hebrew
+: לקחת 
+\begin_inset Formula $n$
+\end_inset
+
+ מצבים מכל ריצה במרווחי זמן קבועים, עבור 
+\begin_inset Formula $k$
+\end_inset
+
+ ריצות.
+\end_layout
+
+\begin_layout Subsection*
+סעיף א, ג
+\end_layout
+
+\begin_layout Standard
+לכל אחד מאפשרויות המעברים: נדגום כמה ריצות ונצייר אותן.
+ האם ההבדלים בהתנהגויות תואמים את האינטואיציה שלנו/ מה שראינו בכיתה? הראו
+ את ההתפלגות של 
+\begin_inset Formula $R$
+\end_inset
+
+ במצבי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ON
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+OFF
+\lang hebrew
+, וההתפלגות השולית.
+ האם זה תואם את מה שראינו בכיתה?
+\end_layout
+
+\begin_layout Standard
+ראינו בהרצאה: 
+\end_layout
+
+\begin_layout Standard
+במצב שבו יש רק מצב 
+\begin_inset Formula $on$
+\end_inset
+
+, 
+\begin_inset Formula $R\sim Po\left(\frac{\lambda}{\delta}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+עבור ההתפלגות הסטציונארית, כלומר כאשר 
+\begin_inset Formula $t$
+\end_inset
+
+ מספיק גדול 
+\begin_inset Formula $\mathbb{P}\left(on\right)=\frac{\kappa_{on}}{\kappa_{off}+\kappa_{on}}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{E}\left[dewll\,time\,on\right]=\frac{1}{\kappa_{off}},\mathbb{E}\left[dewll\,time\,off\right]=\frac{1}{\kappa_{on}}$
+\end_inset
+
+ תוחלת הזמן להישארות במצב.
+\end_layout
+
+\begin_layout Subsubsection*
+מעברים מהירים
+\end_layout
+
+\begin_layout Standard
+במקרה הזה החלפה מתרחשת מהר יותר משעתוק - מחכים 
+\begin_inset Formula $\frac{1}{\lambda}$
+\end_inset
+
+ לשעתוק, אבל נשארים במצב 
+\begin_inset Formula $on$
+\end_inset
+
+ בממוצע 
+\begin_inset Formula $\frac{1}{\kappa_{off}}$
+\end_inset
+
+ זמן.
+ ראשית ב 
+\begin_inset Formula $off$
+\end_inset
+
+ אי אפשר לשעתק, אבל גם במצב 
+\begin_inset Formula $on$
+\end_inset
+
+ יהיו לנו מעט מאוד שעתוקים, כי נעדיף להחליף.
+ לכן נצפה לראות 
+\begin_inset Formula $R$
+\end_inset
+
+ נמוך.
+ מצד שני, מכיוון שאנחנו מחליפים כל הזמן לא יקרה מצב שבו נתקע במצב 
+\begin_inset Formula $off$
+\end_inset
+
+, ולכן לא יהיה מצב שבו אנחנו רק מפרקים רנ
+\begin_inset Quotes erd
+\end_inset
+
+א בלי לאפשר שעתוק.
+ 
+\end_layout
+
+\begin_layout Paragraph*
+סימולציה של ריצה
+\end_layout
+
+\begin_layout Standard
+ניתן לראות עליות וירידות בלי העדפה ספציפית ל 
+\begin_inset Formula $k=0$
+\end_inset
+
+, וכן ערכי 
+\begin_inset Formula $k$
+\end_inset
+
+ קטנים יחסית בממוצע.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename run_for_fast.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+שינוי 
+\begin_inset Formula $k$
+\end_inset
+
+ בזמן סימולציה של ריצה אחת עם 
+\lang english
+fast transitions
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עם 
+\begin_inset Formula $T_{end}=10000$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+התפלגות 
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בשיעור דיברנו על זה שנצפה לקבל 
+\begin_inset Formula $\lambda_{effective}\approx\mathbb{P}\left(on\right)\cdot\lambda$
+\end_inset
+
+, כלומר קצב השעתוק שנראה יהיה הקצב אם נסתכל רק על מה שקורה ב 
+\begin_inset Formula $on$
+\end_inset
+
+.
+ במקרה הזה המודל יראה בקירוב כמו המודל אם המכונה תמיד דולקת )כי אנחנו לא
+ נתקעים ב 
+\begin_inset Formula $off$
+\end_inset
+
+(.
+ ראינו בשיעור שעבור מודל רק עם מצב 
+\begin_inset Formula $on$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $R\sim Po\left(\frac{\lambda}{\delta}\right)$
+\end_inset
+
+.
+ נכניס את קצב השעתוק שלנו ונקבל בקירוב 
+\begin_inset Formula $R\sim Po\left(\frac{\mathbb{P}\left(on\right)\cdot\lambda}{\delta}\right)$
+\end_inset
+
+, כאשר 
+\begin_inset Formula $\mathbb{P}\left(on\right)=\frac{\kappa_{on}}{\kappa_{off}+\kappa_{on}}=\frac{1}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ואכן, אם נדגום מתוך סימולציות על המודל, נוכל לראות שהקירוב הזה לא רע.
+\end_layout
+
+\begin_layout Paragraph*
+התפלגויות 
+\begin_inset Formula $R$
+\end_inset
+
+ במצבי 
+\begin_inset Formula $on/off$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר נסתכל על התפלגות 
+\begin_inset Formula $R$
+\end_inset
+
+ לפי סימולציות במצבי 
+\begin_inset Formula $on$
+\end_inset
+
+ ו 
+\begin_inset Formula $off$
+\end_inset
+
+ בנפרד, נוכל לראות את ההשפעה של מעברים מהירים: כמעט אין זמן לפעולות שאינן
+ החלפה.
+ ההתפלגות במצב 
+\begin_inset Formula $off$
+\end_inset
+
+ דומה למצב 
+\begin_inset Formula $on$
+\end_inset
+
+ כי אין מספיק זמן לפרק, וערכי 
+\begin_inset Formula $k$
+\end_inset
+
+ אליהם מגיעים באמת קטנים ביחס למעברים איטיים יותר, כי אין מספיק זמן לשעתק.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots2/2promoters_multirun_fast_k=30_n=30_T_delta=100_T_start=200.png
+	scale 55
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename plots2/2multirun_fast_k=30_n=30_T_delta=100_T_start=200.png
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+היסטוגרמה של מצבים מסימולציות על המודל ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\lang english
+collect_samples_multi_run
+\lang hebrew
+, עם 
+\lang english
+fast transitions
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ופרמטרים 
+\begin_inset Formula $k=30,n=30,T_{\Delta}=100,T_{start}=200$
+\end_inset
+
+, מול
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+pmf
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של 
+\begin_inset Formula $Po\left(\frac{\mathbb{P}\left(on\right)\cdot\lambda}{\delta}\right)$
+\end_inset
+
+ )בשמאל( ובחלוקה ל 
+\begin_inset Formula $on/off$
+\end_inset
+
+ )בימין(.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+מעברים איטיים
+\end_layout
+
+\begin_layout Standard
+לעומת זאת, עבור מעברים איטיים, החלפה היא אירוע נדיר.
+ שעתוק ופירוק מתרחשים משמעותית יותר מהחלפה, לכן בתוך כל אירוע של 
+\begin_inset Formula $on$
+\end_inset
+
+ נצפה לראות הרבה אירועי שעתוק.
+ מצד שני כאשר אנחנו במצב 
+\begin_inset Formula $off$
+\end_inset
+
+ נוכל לחכות שם הרבה זמן.
+ מכיוון שגם קצב הפירוק גדול מקצב ההחלפות וב 
+\begin_inset Formula $off$
+\end_inset
+
+ ניתן רק לפרק, אז במצב 
+\begin_inset Formula $off$
+\end_inset
+
+ נראה דעיכה, לעיתים עד ל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+, לפני החלפת מצב.
+ כלומר, המודל מתנהג שונה לאורך זמן כתלות באיזה מצב אנחנו.
+ בנוסף, מכיוון שאנחנו נשארים זמן רב באותו מצב אנחנו לא 
+\begin_inset Quotes eld
+\end_inset
+
+מבזבזים
+\begin_inset Quotes erd
+\end_inset
+
+ זמן על החלפות, ולכן נגיע די מהר להתפלגות סטציונארית.
+ 
+\end_layout
+
+\begin_layout Paragraph*
+סימולציה של ריצה
+\end_layout
+
+\begin_layout Standard
+ניתן לראות העדפה ברורה להישארות ב 
+\begin_inset Formula $k=0$
+\end_inset
+
+ )כאשר אנחנו תקועים ב 
+\begin_inset Formula $off$
+\end_inset
+
+(, וערכי 
+\begin_inset Formula $k$
+\end_inset
+
+ גדולים יחסית )כאשר אנחנו תקועים ב 
+\begin_inset Formula $on$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename run_for_slow.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+שינוי 
+\begin_inset Formula $k$
+\end_inset
+
+ בזמן סימולציה של ריצה אחת עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+slow transitions
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עם 
+\begin_inset Formula $T_{end}=10000$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+התפלגות 
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ראינו בשיעור שבהתפלגות הסטציונארית נוכל לתאר את 
+\begin_inset Formula $R$
+\end_inset
+
+ בעזרת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+mixture distribution
+\lang hebrew
+: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbb{P}\left(R=k\right)=\mathbb{P}\left(on\right)\mathbb{P}^{on}\left(R=k\right)+\left(1-\mathbb{P}\left(on\right)\right)\mathbb{P}^{off}\left(R=k\right)
+\]
+
+\end_inset
+
+ כאשר:
+\end_layout
+
+\begin_layout Standard
+- 
+\begin_inset Formula $\mathbb{P}^{off}\left(R=k\right)$
+\end_inset
+
+ הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עבור 
+\begin_inset Formula $k=0$
+\end_inset
+
+ ו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אחרת, כלומר בהסתברות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+, במצב 
+\begin_inset Formula $off$
+\end_inset
+
+ נתייצב על
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מולקולות, מכיוון שרק נפרק ולא נוכל לשעתק, ואין מספיק החלפות לכן נשאר ב 
+\begin_inset Formula $off$
+\end_inset
+
+ זמן רב, מספיק כדי להגיע ל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+- 
+\begin_inset Formula $\mathbb{P}^{on}\left(R=k\right)$
+\end_inset
+
+ הוא, כמו שראינו, ה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+pmf
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של 
+\begin_inset Formula $Po\left(\frac{\lambda}{\delta}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+- 
+\begin_inset Formula $\mathbb{P}\left(on\right)=\frac{\kappa_{on}}{\kappa_{off}+\kappa_{on}}=\frac{1}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לכן סה
+\begin_inset Quotes erd
+\end_inset
+
+כ נקבל קירוב של 
+\begin_inset Formula $R$
+\end_inset
+
+ בצורת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+zero inflated poisson (ZIP)
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+\mathbb{P}\left(R=k\right)=\begin{cases}
+k=0 & \left(1-\mathbb{P}\left(on\right)\right)+\mathbb{P}\left(on\right)\cdot e^{-\frac{\lambda}{\delta}}\\
+k>0 & \mathbb{P}\left(on\right)\cdot\frac{1}{k!}\left(\frac{\lambda}{\delta}\right)^{k}e^{-\frac{\lambda}{\delta}}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ואכן אם נדגום מתוך סימולציות על המודל, שוב נקבל שהקירוב הזה לא רע.
+ 
+\end_layout
+
+\begin_layout Paragraph*
+התפלגויות 
+\begin_inset Formula $R$
+\end_inset
+
+ במצבי 
+\begin_inset Formula $on/off$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאן נוכל לראות בצורה משמעותית את העובדה שהמערכת נשארת במצב אחד זמן ממושך,
+ ולכן מתנהגת כמו שתי מערכות שונות: במצב 
+\begin_inset Formula $off$
+\end_inset
+
+ נהיה בעיקר ב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- כי ההסתברות למעבר מאוד נמוכה, לכן תהיה נמוכה כמעט תמיד מההסתברות להוריד
+ את 
+\begin_inset Formula $k$
+\end_inset
+
+ )כל עוד אפשר( שהיא 
+\begin_inset Formula $k\cdot\delta$
+\end_inset
+
+.
+ לכן במצב 
+\begin_inset Formula $on$
+\end_inset
+
+ נעדיף כמעט תמיד להוריד מאשר לעבור, ולכן כמעט לא נעבור ל 
+\begin_inset Formula $off$
+\end_inset
+
+ כל עוד 
+\begin_inset Formula $k$
+\end_inset
+
+ לא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+ לעומת זאת במצב 
+\begin_inset Formula $on$
+\end_inset
+
+ נראה התפלגות קרובה למה שהיינו רואים במערכת רק עם מצב 
+\begin_inset Formula $on$
+\end_inset
+
+.
+ ההתפלגויות מופרדות לגמרי.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots2/2promoters_multirun_slow_k=30_n=30_T_delta=100_T_start=200.png
+	scale 55
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename plots2/2multirun_slow_k=30_n=30_T_delta=100_T_start=200.png
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+היסטוגרמה של מצבים מסימולציות על המודל ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\lang english
+collect_samples_multi_run
+\lang hebrew
+, עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+slow transitions
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ופרמטרים 
+\begin_inset Formula $k=30,n=30,T_{\Delta}=100,T_{start}=200$
+\end_inset
+
+, מול
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+pmf
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של 
+\lang english
+zero inflated poisson
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+המתואר למעלה )משמאל(, ובחלוקה ל 
+\begin_inset Formula $on/off$
+\end_inset
+
+ )בימין(.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+מעברים בקצב בינוני
+\end_layout
+
+\begin_layout Standard
+לבסוף עבור מעברים בקצב בינוני, נרצה לקבל משהו 
+\begin_inset Quotes eld
+\end_inset
+
+באמצע
+\begin_inset Quotes erd
+\end_inset
+
+.
+ עדיין יש יותר שעתוק ופירוק מאשר מעברים, אבל אנחנו עוברים מספיק כדי שלא
+ נוכל להניח שבכל פעם שאנחנו ב 
+\begin_inset Formula $off$
+\end_inset
+
+ אנחנו מגיעים ל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+, ושכל פעם שאנחנו ב 
+\begin_inset Formula $on$
+\end_inset
+
+ אנחנו נמצאים שם מספיק זמן כדי לסמלץ מכונה שהיא רק 
+\begin_inset Formula $on$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Paragraph*
+סימולציה של ריצה
+\end_layout
+
+\begin_layout Standard
+רואים כאן משהו ממוצע, כלומר יש הישארות ב 
+\begin_inset Formula $k=0$
+\end_inset
+
+ מידי פעם אבל בהחלט לא כמו במעברים איטיים, מצד שני מגיעים לערכי 
+\begin_inset Formula $k$
+\end_inset
+
+ גדולים יותר מאשר במעברים מהירים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename run_for_intermediate.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+שינוי 
+\begin_inset Formula $k$
+\end_inset
+
+ בזמן סימולציה של ריצה אחת עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+intermediate transitions
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עם 
+\begin_inset Formula $T_{end}=10000$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+התפלגות 
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הרעיון שהגעתי אליו היה למצע בין שתי ההתפלגויות, כלומר 
+\begin_inset Formula 
+\[
+\mathbb{P}\left(R=k\right)=\begin{cases}
+k=0 & \frac{1}{2}\left(\left(1-\mathbb{P}\left(on\right)\right)+\mathbb{P}\left(on\right)\cdot e^{-\frac{\lambda}{\delta}}+e^{-\frac{\mathbb{P}\left(on\right)\cdot\lambda}{\delta}}\right)\\
+k>0 & \frac{1}{2}\left(\mathbb{P}\left(on\right)\cdot\frac{1}{k!}\left(\frac{\lambda}{\delta}\right)^{k}e^{-\frac{\lambda}{\delta}}+\frac{1}{k!}\left(\frac{\mathbb{P}\left(on\right)\cdot\lambda}{\delta}\right)^{k}e^{-\frac{\mathbb{P}\left(on\right)\cdot\lambda}{\delta}}\right)
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ובאמת נראה שזה קירוב לא רע, למרות שברור שהוא עובד פחות טוב מאשר למקרים הקיצוניים.
+\end_layout
+
+\begin_layout Paragraph*
+התפלגויות 
+\begin_inset Formula $R$
+\end_inset
+
+ במצבי 
+\begin_inset Formula $on/off$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאן אפשר לראות באופן יותר בולט )מאשר בהתפלגות השולית( את העובדה שזהו אכן
+ מצב ביניים: במצב 
+\begin_inset Formula $on$
+\end_inset
+
+ נראה משהו דומה לפואסון שהיינו רואים במערכת שתמיד דולקת, אבל עם נטייה קלה
+ לערכי 
+\begin_inset Formula $k$
+\end_inset
+
+ קטנים, ובמצב 
+\begin_inset Formula $off$
+\end_inset
+
+ לעומת זאת המערכת תנסה לרדת ל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+ העובדה שבמצב 
+\begin_inset Formula $off$
+\end_inset
+
+ נראה ערכי 
+\begin_inset Formula $k$
+\end_inset
+
+ יותר גבוהים כאן מאשר במעברים איטיים קשורה לכך שכאן יתקבלו יותר מעברים ל
+ 
+\begin_inset Formula $off$
+\end_inset
+
+ בערכי 
+\begin_inset Formula $k$
+\end_inset
+
+ גבוהים מאשר במעברים איטיים שם נעבור ל 
+\begin_inset Formula $off$
+\end_inset
+
+ כמעט רק כאשר 
+\begin_inset Formula $k=0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots2/2promoters_multirun_intermediate_k=30_n=30_T_delta=100_T_start=200.png
+	scale 55
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename plots2/2multirun_intermediate_k=30_n=30_T_delta=100_T_start=200.png
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+היסטוגרמה של מצבים מסימולציות על המודל ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\lang english
+collect_samples_multi_run
+\lang hebrew
+, עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+intermidiate transitions
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ופרמטרים 
+\begin_inset Formula $k=30,n=30,T_{\Delta}=100,T_{start}=200$
+\end_inset
+
+, מול
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+pmf
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+המתואר למעלה )בשמאל( ובחלוקה למצבי 
+\begin_inset Formula $on/off$
+\end_inset
+
+ )מימין(.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+סעיף ב
+\end_layout
+
+\begin_layout Standard
+נעשה סימולציה של המערכת ונאסוף דוגמאות בעזרת שתי האופציות.
+ נשים לב לטריידאוף בין לקיחת דגימות מרובות ממקטעים לעומת הרבה ריצות )
+\begin_inset Formula $n$
+\end_inset
+
+ מול 
+\begin_inset Formula $k$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+נזכור כי אם המערכת במצב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ON
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+תמיד, אז ההתפלגות של מספר הדוגמאות צריכה להתאים לתוצאות שראינו בכיתה.
+\end_layout
+
+\begin_layout Standard
+כאשר אוספים דוגמאות בעזרת שתי האופציות לא ראיתי שינוי משמעותי.
+ למשל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots2/2multirun_fast_k=30_n=30_T_delta=100_T_start=200.png
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename plots2/2multirun_intermediate_k=30_n=30_T_delta=100_T_start=200.png
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename plots2/2multirun_slow_k=30_n=30_T_delta=100_T_start=200.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots2/fast_k=900_T_end=100.png
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename plots2/intermediate_k=900_T_end=100.png
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename plots2/slow_k=900_T_end=100.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+היסטוגרמה של מצבים מסימולציות על המודל ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\lang english
+collect_samples_multi_run
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)למעלה( וע
+\begin_inset Quotes erd
+\end_inset
+
+י
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+collect_samples
+\lang hebrew
+ עבור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פרמטרים 
+\begin_inset Formula $k=30,n=30,T_{\Delta}=100,T_{start}=200$
+\end_inset
+
+ ל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+multirun
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו 
+\begin_inset Formula $k=900,T_{end}=100$
+\end_inset
+
+ לדגימות הרגילות )מה שיתן לנו אותו מספר דוגמאות(.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בנוסף אם נותנים למערכת פרמטרים שישאירו אותה ב 
+\begin_inset Formula $on$
+\end_inset
+
+ תמיד )מתחילים מ 
+\begin_inset Formula $on$
+\end_inset
+
+ ונותנים קצב מעבר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+(, אז אנחנו רוצים לקבל משהו שתואם מודל שבו אין לנו מצב 
+\begin_inset Formula $off$
+\end_inset
+
+, וראינו שבמקרה כזה 
+\begin_inset Formula $R\sim Po\left(\frac{\lambda}{\delta}\right)$
+\end_inset
+
+.
+ ואכן מקבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots2/hist/always_on_k=20_n=50_T_delta=100_T_start=200.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+היסטוגרמה של מצבים מסימולציות על המודל ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\lang english
+collect_samples_multi_run
+\lang hebrew
+, עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+always_on transitions
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ופרמטרים 
+\begin_inset Formula $k=20,n=50,T_{\Delta}=100,T_{start}=200$
+\end_inset
+
+, מול
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+pmf
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של 
+\begin_inset Formula $Po\left(\frac{\lambda}{\delta}\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
